@@ -5,10 +5,24 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
  + [database scripts to create / change DB tables](./toast_strategies.sql)
  
  ### Tables Info
-   | Plain  | Extended | External |  Main  |
-|:-------:|:--------:|:--------:|:------:|
-  | ![some img](images/plain_heap_table.png)   |  ![some img](images/extended_heap_table.png)  |  ![some img](images/external_heap_table.png.png)  |  ![some img](images/main_heap_table.png.png)  |
+   | Plain  | Extended |
+|:-------:|:--------:|
+  | ![some img](images/plain_heap_table.png)   |  ![some img](images/extended_heap_table.png)  | 
+  
+  | External |  Main  |
+ |:--------:|:------:|
+  | ![some img](images/external_heap_table.png)  |  ![some img](images/main_heap_table.png)  |
  
+### Toast Info
+ 
+| Plain  | Extended |
+|:-------:|:--------:|
+| ![some img](images/toast/plain.png)   |  ![some img](images/toast/extended.png)  | 
+
+| External |  Main  |
+|:--------:|:------:|
+| ![some img](images/toast/external.png)  |  ![some img](images/toast/main.png)  |
+
  
  ### Comparason analysis of elapsed time to SELECT data 
  
