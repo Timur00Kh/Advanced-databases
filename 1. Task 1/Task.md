@@ -4,6 +4,12 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
 
  + [database scripts to create / change DB tables](./toast_strategies.sql)
  
+ ### Tables Info
+   | Plain  | Extended | External |  Main  |
+|:-------:|:--------:|:--------:|:------:|
+  | ![some img](images/plain_heap_table.png)   |  ![some img](images/extended_heap_table.png)  |  ![some img](images/external_heap_table.png.png)  |  ![some img](images/main_heap_table.png.png)  |
+ 
+ 
  ### Comparason analysis of elapsed time to SELECT data 
  
  | Strategy         | Plain  | Extended | External |  Main  |
@@ -27,3 +33,4 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
 (4ms и 8ms avg соответсвенно. Сравнивал на таблице со стратегией plain).
 Думаю такое различие связано с разным типо подключения. 
 DataGrip подключается по jdbc.
+
