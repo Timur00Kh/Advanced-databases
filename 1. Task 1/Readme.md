@@ -4,7 +4,7 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
 
  + [database scripts to create / change DB tables](./toast_strategies.sql)
  
- ### Tables Info
+ ### Original Tables Info
    | Plain  | Extended |
 |:-------:|:--------:|
   | ![some img](images/plain_heap_table.png)   |  ![some img](images/extended_heap_table.png)  | 
@@ -13,8 +13,12 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
  |:--------:|:------:|
   | ![some img](images/external_heap_table.png)  |  ![some img](images/main_heap_table.png)  |
  
-### Toast Info
- 
+### TOAST Info
+
+```sql
+SELECT * FROM pgstattuple(16626);
+```
+
 | Plain  | Extended |
 |:-------:|:--------:|
 | ![some img](images/toast/plain.png)   |  ![some img](images/toast/extended.png)  | 
@@ -23,6 +27,13 @@ Tasks: https://docs.google.com/document/d/1-zWB_upVSt1fB_Vz1FA0SoaNoT_ewUZHraarH
 |:--------:|:------:|
 | ![some img](images/toast/external.png)  |  ![some img](images/toast/main.png)  |
 
+### Toast first page header
+
+| Extended  | External |
+|:-------:|:--------:|
+| ![some img](images/toast_page_headers/extelnal.png)   |  ![some img](images/toast_page_headers/extended.png)  | 
+
+- Plain and Main don't have any page in TOAST. 
  
  ### Comparason analysis of elapsed time to SELECT data 
  

@@ -142,3 +142,20 @@ ORDER BY attr.attnum;
 --extended      [16,9,12,9,9,10,9,14,9,17,7,9,5,9,14,6,7,5,8,7,8,6,5,7,9,13,8,13,7,13,6,7,6,6,8,7,35,7,8,7,10,5,7,10,7,6,8,5,9,5]               8.98ms
 --external      [14,10,6,8,6,5,7,6,9,13,6,6,8,6,9,6,10,7,6,8,6,7,10,7,15,8,6,7,9,9,8,6,11,22,9,10,11,10,8,9,10,11,6,8,6,8,6,8,7,7]              8.42ms
 --main          [8,8,8,8,6,7,6,8,6,5,5,14,7,7,7,7,6,9,7,6,7,8,6,6,6,6,5,14,6,6,6,7,6,9,6,6,7,5,5,6,7,8,11,6,6,9,5,6,5,10]                       7.02ms
+
+
+
+SELECT * FROM pgstattuple(16614);
+SELECT * FROM pgstattuple(16617);
+
+SELECT * FROM pgstattuple(16620);
+SELECT * FROM pgstattuple(16623);
+
+SELECT * FROM pgstattuple(16626);
+SELECT * FROM pgstattuple(16629);
+
+SELECT * FROM pgstattuple(16732);
+SELECT * FROM pgstattuple(16735);
+
+SELECT * FROM page_header(get_raw_page('pg_toast.pg_toast_16620', 0));
+SELECT * FROM page_header(get_raw_page('pg_toast.pg_toast_16626', 0));
