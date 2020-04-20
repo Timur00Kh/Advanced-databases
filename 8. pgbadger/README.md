@@ -25,4 +25,7 @@ sudo -u postgres pgbench -c 100 -s 500 -T 15 pgbench_db
 
 #### Place for my explanation
 
+1. Update запросы исполняются значительно медленне чем Insert
+1. 
+
 
