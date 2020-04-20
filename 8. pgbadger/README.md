@@ -1,9 +1,22 @@
 # PgBadger
 
 #### Preparing DB for TBC-B test 
-![](./images/1.png)
+
++ install pgBadger
++ set postgres [log config](postgres_log.conf)
++ reload postgres
++ init `pgbench_db`
+
+```bash
+sudo -u postgres pgbench -i -s 500 pgbench_db
+```
+![](images/1.png)
 #### Executing TBC-B test 
-![](./images/2.png)
+
+```bash
+sudo -u postgres pgbench -c 100 -s 500 -T 15 pgbench_db
+```
+![](images/2.png)
 
 #### pgBadger report
 
