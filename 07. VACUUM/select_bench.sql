@@ -1,0 +1,1 @@
+SELECT name FROM lab7 WHERE id = :id;
