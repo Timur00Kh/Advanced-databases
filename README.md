@@ -3,5 +3,5 @@
 
 + **1.1** [Toast strategies](1.1%20Toast%20strategies)
 + **1.2** [Fillfactor](1.2%20Fillfactor)
-+ **2\.** [Fillfactor](1.2%20Fillfactor)
++ **2\.** [Unlogged Table](2.%20%20Unlogged%20Table)
 + **8\.** [pgbadger](8.%20pgbadger)

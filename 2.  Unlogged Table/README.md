@@ -51,14 +51,44 @@ Unlogged таблица быстрее втавляет данные чем logg
 
 # Bulk Update
 
+
+```bash
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -l -n -f bulk_update_logged_test.sql -D id1=1 -D id2=110000
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -l -n -f bulk_update_unlogged_test.sql -D id1=1 -D id2=142000
+```
+
+![](images/bulk_update.png)
+
 | | logged | unlogged |
 |:---:|:---:|:---:|
-| **tps** | 368.49 | 475.49 |
-| **latency** | 2.714 ms | 2.103 ms |
+| **tps** | 98.58 | 85.61 |
+| **latency** | 10.144 ms | 11.682 ms |
 
-##### Percentage of difference for INSERT between logged/unlogged tables:
-+ **TPS:** 1.29
-+ **latency:** 1.29
+##### Percentage of difference for Bulk Update between logged/unlogged tables:
++ **TPS:** 0.0012
++ **latency:** 0.87
 
+# Bulk Delete
+
+```bash
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -l -n -f bulk_delete_logged_test.sql -D id1=1 -D id2=110000
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -l -n -f bulk_delete_unlogged_test.sql -D id1=1 -D id2=142000
+```
+
+![](images/bulk_delete.png)
+
+
+| | logged | unlogged |
+|:---:|:---:|:---:|
+| **tps** | 103.133 | 89.485 |
+| **latency** | 9.697 ms | 11.175 ms |
+
+##### Percentage of difference for Bulk Delete between logged/unlogged tables:
++ **TPS:** 1.15
++ **latency:** 0.87
+
+# Вывод
+  
+ Unlogged таблица производительнее на INSERT операциях по очевидным причинам, однако в последующих UPDATE и DELETE операциях значительно уступает.
 
 
