@@ -28,7 +28,7 @@ SELECT
 ### distribution after bulk update
 
 ```bash
-pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 15 -l -n -f bulk_update.sql -D id1=0 -D id2=999999
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -l -n -f bulk_update.sql -D id1=0 -D id2=999999
 ```
 
 ![](images/after_bulk2.png)
