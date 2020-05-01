@@ -3,8 +3,9 @@
 ### flyway scripts
 + [V4.1__LAB7_cteate_table.sql](../flyway-6.4.1/sql/V4.1__LAB7_cteate_table.sql)
 
-### benchmark script
+### benchmark scripts
 + [select_bench.sql](select_bench.sql)
++ [update.sql](update.sql)
 
 ## 1. first benchmark
  
