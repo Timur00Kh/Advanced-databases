@@ -6,6 +6,9 @@
 + [V3.3__LAB6_insert_into_hub.sql](../flyway-6.4.1/sql/V3.3__LAB6_insert_into_hub.sql)
 + [V3.4__LAB6_create_redistribution_rules.sql](../flyway-6.4.1/sql/V3.4__LAB6_create_redistribution_rules.sql)
 
+### benchmark script
++ [bulk_update.sql](bulk_update.sql)
+
 ### distribution before bulk update
 
 ```sql
