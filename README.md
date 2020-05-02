@@ -10,4 +10,5 @@
 + **12\.** [Triggers](12.%20Triggers)
 + **14\.** [User aggregation](14.%20User%20aggregation)
 + **15\.** [SSL](15.%20SSL)
++ **16\.** [Btree Index Usage](16.%20Btree%20Index%20Usage)
 
