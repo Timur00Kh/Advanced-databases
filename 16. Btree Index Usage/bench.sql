@@ -1,0 +1,3 @@
+SELECT min(A) OVER (PARTITION BY B, C ORDER BY B, C)
+FROM index_test
+ORDER BY B, C
