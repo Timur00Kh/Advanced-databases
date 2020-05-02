@@ -7,3 +7,4 @@
 + **06\.** [Inherited Table](06.%20Inherited%20Table)
 + **07\.** [VACUUM](07.%20VACUUM)
 + **08\.** [pgbadger](08.%20pgbadger)
++ **12\.** [Triggers](12.%20Triggers)
