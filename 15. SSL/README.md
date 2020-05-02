@@ -37,11 +37,14 @@ openssl x509 -req -in postgresql.csr -text -days 365 -CA root.crt -CAkey root.ke
 ```bash
 # Проверка
  psql -p 5432 "sslmode=require dbname=pgbench_db" -U postgres -h ec2-54-152-89-25.compute-1.amazonaws.com
+# pgbench_db=# SELECT * FROM pg_stat_ssl;
+# есть подключение!
 
 # Тест
 sudo -u postgres pgbench -c 100 -T 30 pgbench_db -h ec2-54-152-89-25.compute-1.amazonaws.com
 ```
 
+![](images/pg_stat_ssl.png)
 ![](images/2.png)
 
 Показатели Latency и TPS ухудшились после включения SSL
