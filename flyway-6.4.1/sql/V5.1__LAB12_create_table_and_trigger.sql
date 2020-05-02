@@ -36,6 +36,6 @@ $$ LANGUAGE plpgsql;
 
 
 CREATE TRIGGER bf_insert_trigger
-    BEFORE INSERT OR UPDATE ON hub
+    BEFORE INSERT ON hub
     FOR EACH ROW
 EXECUTE PROCEDURE bf_insert();
