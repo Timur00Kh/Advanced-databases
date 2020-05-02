@@ -25,7 +25,7 @@ BEGIN
     END IF;
 
     IF (TG_OP = 'UPDATE') THEN
-        EXECUTE 'delete from hub_inherit_' || old_table_id || ' where id = ' || OLD.id;
+        EXECUTE 'delete from hub_inherit_' || old_table_id || ' where id = ' || OLD.id || ' and melon_amount = ' || OLD.melon_amount;
     END IF;
 
     EXECUTE 'insert into hub_inherit_' || table_id || ' (id, melon_amount) values ('
