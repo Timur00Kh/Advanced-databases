@@ -1,12 +1,12 @@
 # 16. Btree Index Usage
  
  ### flyway script
- + [V7.1__LAB16_create_table_and_indexes.sql](../flyway-6.4.1/sql/V7.1__LAB16_create_table_and_indexes.sql)
+ + [V7.2__LAB16_recreate_table_and_indexes.sql](../flyway-6.4.1/sql/V7.2__LAB16_recreate_table_and_indexes.sql)
 
  ### bench script
  + [bench.sql](bench.sql)
 
-  ### benchmarking
+### benchmarking
 
  
 ```bash
@@ -19,8 +19,8 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 SELECT * FROM pg_statio_user_indexes;
 ```
 
-![](images/2.png)
+![](images/3.png)
 
-Число попаданий в буфер для индекса `i_bc` является наибольшим. 
-К тому же ото в разы больше остальных.
+Число попаданий в буфер для индекса `i_b_desc_c_desc` является наибольшим. 
+К тому же это в разы больше остальных.
 Мне кажется именно этот индекс покрывает запрос.
