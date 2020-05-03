@@ -11,4 +11,9 @@
 + **14\.** [User aggregation](14.%20User%20aggregation)
 + **15\.** [SSL](15.%20SSL)
 + **16\.** [Btree Index Usage](16.%20Btree%20Index%20Usage)
++ **18\.** [Standard , Geqo](18.%20Standard%20,%20Geqo)
++ **19\.** [Btree, GIN, GIST](19.%20Btree,%20GIN,%20GIST)
+
+### flyway scripts
++ [flyway-6.4.1/sql](flyway-6.4.1/sql)
 
