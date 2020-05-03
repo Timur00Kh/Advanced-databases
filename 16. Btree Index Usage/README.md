@@ -1,7 +1,7 @@
 # 16. Btree Index Usage
  
  ### flyway script
- + [V7.2__LAB16_recreate_table_and_indexes.sql](../flyway-6.4.1/sql/V7.2__LAB16_recreate_table_and_indexes.sql)
+ + [V10.1__LAB16_create_table_and_indexes_try3.sql](../flyway-6.4.1/sql/V10.1__LAB16_create_table_and_indexes_try3.sql)
 
  ### bench script
  + [bench.sql](bench.sql)
