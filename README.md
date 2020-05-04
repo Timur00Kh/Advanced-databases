@@ -18,7 +18,7 @@
 + **14\.** [User aggregation](14.%20User%20aggregation)
 + **15\.** [SSL](15.%20SSL)
 + **16\.** [Btree Index Usage](16.%20Btree%20Index%20Usage)
-+ **16\.** [Btree, BRIN, HASH](17.%20Btree,%20BRIN,%20HASH)
++ **17\.** [Btree, BRIN, HASH](17.%20Btree,%20BRIN,%20HASH)
 + **18\.** [Standard , Geqo](18.%20Standard%20,%20Geqo)
 + **19\.** [Btree, GIN, GIST](19.%20Btree,%20GIN,%20GIST)
 
