@@ -12,10 +12,10 @@
 
 ```sql
 select pg_size_pretty( pg_indexes_size('lab17_btree'));
---  2848 kB
+--  5664 kB
 
 select pg_size_pretty( pg_indexes_size('lab17_hash'));
---  4688 kB
+--  4664 kB
 
 select pg_size_pretty( pg_indexes_size('lab17_brin'));
 --  48 kB
@@ -25,17 +25,17 @@ select pg_size_pretty( pg_indexes_size('lab17_brin'));
 
  
 ```bash
-pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -n -f btree.sql
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -c 10 -n -f btree.sql
 ``` 
-![](images/btree.png)
+![](images/btree2.png)
 
 ```bash
-pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -n -f hash.sql
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -c 10 -n -f hash.sql
 ```
-![](images/hash.png)
+![](images/hash2.png)
 
 ```bash
-pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -n -f brin.sql
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -c 10 -n -f brin.sql
 ``` 
 ![](images/brin.png)
 
@@ -43,6 +43,6 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 
 | index | size      | latency | tps |
 |:-----:|:--------:|:---:|:---:|
-| btree | 2848 kB | 17.5 ms | 57.0 |
-| hash   | 4688 kB | 17.6 ms| 56.8  |
+| btree | 5664 kB | 2.8 ms | 351.8 |
+| hash   | 4664 kB | 2.8 ms| 355.6 |
 | brin  | 48 kB   | 17.6 ms | 56.8 |

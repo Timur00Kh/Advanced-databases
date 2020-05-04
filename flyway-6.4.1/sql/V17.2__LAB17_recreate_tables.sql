@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS lab17_btree;
+DROP TABLE IF EXISTS lab17_hash;
+DROP TABLE IF EXISTS lab17_brin;
 
 create table lab17_btree (
    id bigint,
