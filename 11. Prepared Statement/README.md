@@ -24,11 +24,12 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 ### Вывод
 
 #### TPS
-+ varchar first: 2737 ms
-+ varchar last: 18
++ prepared: 67
++ not prepared: 207
 
 #### Latency
-+ varchar first: 2737 ms
-+ varchar last: 15
++ prepared: 14 ms
++ not prepared: 4 ms
 
-![](images/Latency.png)
+![](images/latency.png)
+
