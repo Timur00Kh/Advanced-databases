@@ -14,5 +14,21 @@
  ```bash
 pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -T 300 -c 50 -l -n -f bench1.sql
 ```
+![](images/1.png)
  
- 
+```bash
+pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -T 300 -c 50 -l -n -f bench2.sql
+```
+![](images/2.png)
+
+### Вывод
+
+#### TPS
++ varchar first: 2737 ms
++ varchar last: 18
+
+#### Latency
++ varchar first: 2737 ms
++ varchar last: 15
+
+![](images/Latency.png)
