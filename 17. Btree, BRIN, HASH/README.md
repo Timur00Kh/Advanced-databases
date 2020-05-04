@@ -1,7 +1,7 @@
 # 17. Btree, BRIN, HASH
 
 ### flyway scripts
-+ [V17.1__LAB17_create_tables.sql](../flyway-6.4.1/sql/V17.1__LAB17_create_tables.sql)
++ [V17.2__LAB17_recreate_tables.sql](../flyway-6.4.1/sql/V17.2__LAB17_recreate_tables.sql)
 
  ### bench scripts
  + [btree.sql](btree.sql)
