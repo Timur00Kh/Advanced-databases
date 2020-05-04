@@ -12,13 +12,13 @@
 
 ```sql
 select pg_size_pretty( pg_indexes_size('lab17_btree'));
---  6512 kB
+--  2848 kB
 
 select pg_size_pretty( pg_indexes_size('lab17_hash'));
---  4920 kB
+--  4688 kB
 
 select pg_size_pretty( pg_indexes_size('lab17_brin'));
---  11 MB
+--  48 kB
 ```
 
 ### benchmarking
