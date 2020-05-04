@@ -43,6 +43,6 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 
 | index | size      | latency | tps |
 |:-----:|:--------:|:---:|:---:|
-| btree | 6512 kB | 9.917 ms | 100 |
-| gin   | 4920 kB | 16.243 ms| 62  |
-| gist  | 11 MB   | 10.522 ms| 95 |
+| btree | 2848 kB | 16.243 ms | 62 |
+| hash   | 4688 kB | 9.917 ms| 100  |
+| brin  | 48 kB   | 10.522 ms| 95 |
