@@ -2,4 +2,3 @@
 begin;
 select * from heap_table_lab5 where id = :id;
 commit;
-partition_table
