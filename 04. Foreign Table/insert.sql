@@ -1,11 +1,3 @@
-# 04. Foreign Table
- 
- ### flyway script
- + [V12.1__LAB4_create_foreign_table.sqlsql](../flyway-6.4.1/sql/V12.1__LAB4_create_foreign_table.sql)
-
- ## insert data 
- 
-```sql
 DO
 $do$
     DECLARE
@@ -26,15 +18,10 @@ $do$
             END LOOP;
     END
 $do$;
-```  
 
- ## data distribution
 
-```sql
 SELECT
        (SELECT count(1) FROM schema1_table) as c1,
        (SELECT count(1) FROM schema2_table) as c2,
        (SELECT count(1) FROM schema3_table) as c3;
-```
 
-![](d.png)
