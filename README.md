@@ -10,6 +10,7 @@
 + **06\.** [Inherited Table](06.%20Inherited%20Table)
 + **07\.** [VACUUM](07.%20VACUUM)
 + **08\.** [pgbadger](08.%20pgbadger)
++ **09\.** [pg_stat_statements](09.%20pg_stat_statements)
 + **12\.** [Triggers](12.%20Triggers)
 + **14\.** [User aggregation](14.%20User%20aggregation)
 + **15\.** [SSL](15.%20SSL)
