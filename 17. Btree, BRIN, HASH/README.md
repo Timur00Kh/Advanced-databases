@@ -32,7 +32,7 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 ```bash
 pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -n -f hash.sql
 ```
-![](images/gist.png)
+![](images/hash.png)
 
 ```bash
 pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com -p 5432 -T 300 -n -f brin.sql
@@ -43,6 +43,6 @@ pgbench -U postgres -h timurs-database.cqahjo27i0vt.us-east-1.rds.amazonaws.com 
 
 | index | size      | latency | tps |
 |:-----:|:--------:|:---:|:---:|
-| btree | 2848 kB | 18 ms | 57 |
-| hash   | 4688 kB | 9.917 ms| 100  |
-| brin  | 48 kB   | 18 ms | 57 |
+| btree | 2848 kB | 17.5 ms | 57.0 |
+| hash   | 4688 kB | 17.6 ms| 56.8  |
+| brin  | 48 kB   | 17.6 ms | 56.8 |
