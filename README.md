@@ -23,6 +23,7 @@
 + **19\.** [Btree, GIN, GIST](19.%20Btree,%20GIN,%20GIST)
 + **20\.** [Lock Monitoring](20.%20Lock%20Monitoring)
 + **21\.** [SQL vs PLpgSQL](21.%20SQL%20vs%20PLpgSQL)
++ **22\.** [Shared Buffers](22.%20Shared%20Buffers)
 
 ### flyway scripts
 + [flyway-6.4.1/sql](flyway-6.4.1/sql)
