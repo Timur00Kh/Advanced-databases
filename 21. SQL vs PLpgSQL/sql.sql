@@ -1,1 +1,1 @@
-SELECT func_sql('postgres');
+SELECT * FROM func_sql('postgres');
