@@ -28,4 +28,4 @@
 ### flyway scripts
 + [flyway-6.4.1/sql](flyway-6.4.1/sql)
 
-![](flyway-6.4.1/1.png)
+![](flyway-6.4.1/2.png)
